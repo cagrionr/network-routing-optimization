@@ -132,6 +132,7 @@ def calculate():
         sb += f"--------------------------------\n"
         sb += f"HESAPLANAN SKOR (Cost): {total_fitness:.4f}\n"
         sb += f"Detay: {bw_info}\n"
+        sb += f"{AlgorithmUtils.get_required_bandwidth(network_graph, path)}\n"
         
         log_message(sb)
         draw_graph(path)

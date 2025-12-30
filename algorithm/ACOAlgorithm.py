@@ -27,6 +27,7 @@ class ACOAlgorithm:
             
             weights = []
             for n in neighbors:
+                
                 edge = tuple(sorted((current, n)))
                 tau = self.pheromone.get(edge, 1.0)
 
